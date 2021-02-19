@@ -18,10 +18,10 @@ package com.example.recyclersample
 
 import android.content.Context
 
-class Datasource(val context: Context) {
+class Datasource(private val context: Context) {
     fun getFlowerList(): Array<String> {
 
         // Return flower list from string resources
-        return context.resources.getStringArray(R.array.flower_array)
+        return context.resources.getStringArray(R.array.game_array)
     }
 }

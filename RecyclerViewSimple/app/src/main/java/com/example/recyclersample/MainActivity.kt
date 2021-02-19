@@ -29,6 +29,6 @@ class MainActivity : AppCompatActivity() {
         val flowerList = Datasource(this).getFlowerList()
 
         val recyclerView: RecyclerView = findViewById(R.id.recycler_view)
-        recyclerView.adapter = FlowerAdapter(flowerList)
+        recyclerView.adapter = GameAdapter(flowerList)
     }
 }

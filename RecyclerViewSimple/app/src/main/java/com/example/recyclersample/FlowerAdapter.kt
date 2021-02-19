@@ -22,12 +22,12 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class FlowerAdapter(val flowerList: Array<String>) :
-    RecyclerView.Adapter<FlowerAdapter.FlowerViewHolder>() {
+class GameAdapter(private val flowerList: Array<String>) :
+    RecyclerView.Adapter<GameAdapter.GameViewHolder>() {
 
     // Describes an item view and its place within the RecyclerView
-    class FlowerViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        private val flowerTextView: TextView = itemView.findViewById(R.id.flower_text)
+    class GameViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        private val flowerTextView: TextView = itemView.findViewById(R.id.game_text)
 
         fun bind(word: String) {
             flowerTextView.text = word
@@ -35,11 +35,11 @@ class FlowerAdapter(val flowerList: Array<String>) :
     }
 
     // Returns a new ViewHolder
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FlowerViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GameViewHolder {
         val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.flower_item, parent, false)
+            .inflate(R.layout.game_item, parent, false)
 
-        return FlowerViewHolder(view)
+        return GameViewHolder(view)
     }
 
     // Returns size of data list
@@ -48,7 +48,7 @@ class FlowerAdapter(val flowerList: Array<String>) :
     }
 
     // Displays data at a certain position
-    override fun onBindViewHolder(holder: FlowerViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: GameViewHolder, position: Int) {
         holder.bind(flowerList[position])
     }
 }

@@ -20,9 +20,9 @@
 
     <!-- Add in TextView to display flower name   -->
     <TextView
-        android:id="@+id/flower_text"
+        android:id="@+id/game_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        android:textSize="50dp" />
+        android:text="@string/textview"
+        android:textSize="50sp" />
 </FrameLayout>

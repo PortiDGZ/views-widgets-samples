@@ -16,9 +16,10 @@
 
 <resources>
     <string name="app_name">RecyclerView Sample</string>
+    <string name="textview">TextView</string>
 
     <!-- Add in flower names  -->
-    <string-array name="flower_array">
+    <string-array name="game_array">
         <item>Lily</item>
         <item>Poppy</item>
         <item>Sunflower</item>
