@@ -22,47 +22,47 @@ import androidx.lifecycle.MutableLiveData
 
 /* Handles operations on flowersLiveData and holds details about it. */
 class DataSource(resources: Resources) {
-    private val initialFlowerList = flowerList(resources)
-    private val flowersLiveData = MutableLiveData(initialFlowerList)
+    private val initialGameList = gameList(resources)
+    private val gameLiveData = MutableLiveData(initialGameList)
 
     /* Adds flower to liveData and posts value. */
-    fun addFlower(flower: Flower) {
-        val currentList = flowersLiveData.value
+    fun addGame(game: Game) {
+        val currentList = gameLiveData.value
         if (currentList == null) {
-            flowersLiveData.postValue(listOf(flower))
+            gameLiveData.postValue(listOf(game))
         } else {
             val updatedList = currentList.toMutableList()
-            updatedList.add(0, flower)
-            flowersLiveData.postValue(updatedList)
+            updatedList.add(0, game)
+            gameLiveData.postValue(updatedList)
         }
     }
 
     /* Removes flower from liveData and posts value. */
-    fun removeFlower(flower: Flower) {
-        val currentList = flowersLiveData.value
+    fun removeGame(game: Game) {
+        val currentList = gameLiveData.value
         if (currentList != null) {
             val updatedList = currentList.toMutableList()
-            updatedList.remove(flower)
-            flowersLiveData.postValue(updatedList)
+            updatedList.remove(game)
+            gameLiveData.postValue(updatedList)
         }
     }
 
     /* Returns flower given an ID. */
-    fun getFlowerForId(id: Long): Flower? {
-        flowersLiveData.value?.let { flowers ->
-            return flowers.firstOrNull{ it.id == id}
+    fun getGameForId(id: Long): Game? {
+        gameLiveData.value?.let { game ->
+            return game.firstOrNull{ it.id == id}
         }
         return null
     }
 
-    fun getFlowerList(): LiveData<List<Flower>> {
-        return flowersLiveData
+    fun getGameList(): LiveData<List<Game>> {
+        return gameLiveData
     }
 
     /* Returns a random flower asset for flowers that are added. */
-    fun getRandomFlowerImageAsset(): Int? {
-        val randomNumber = (initialFlowerList.indices).random()
-        return initialFlowerList[randomNumber].image
+    fun getRandomGameImageAsset(): Int? {
+        val randomNumber = (initialGameList.indices).random()
+        return initialGameList[randomNumber].image
     }
 
     companion object {

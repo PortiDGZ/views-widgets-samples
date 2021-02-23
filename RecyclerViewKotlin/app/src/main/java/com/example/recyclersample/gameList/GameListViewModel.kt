@@ -14,43 +14,43 @@
  * limitations under the License.
  */
 
-package com.example.recyclersample.flowerList
+package com.example.recyclersample.gameList
 
 import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.example.recyclersample.data.DataSource
-import com.example.recyclersample.data.Flower
+import com.example.recyclersample.data.Game
 import kotlin.random.Random
 
-class FlowersListViewModel(val dataSource: DataSource) : ViewModel() {
+class GameListViewModel(val dataSource: DataSource) : ViewModel() {
 
-    val flowersLiveData = dataSource.getFlowerList()
+    val gameLiveData = dataSource.getGameList()
 
     /* If the name and description are present, create new Flower and add it to the datasource */
-    fun insertFlower(flowerName: String?, flowerDescription: String?) {
-        if (flowerName == null || flowerDescription == null) {
+    fun insertGame(gameName: String?, gameDescription: String?) {
+        if (gameName == null || gameDescription == null) {
             return
         }
 
-        val image = dataSource.getRandomFlowerImageAsset()
-        val newFlower = Flower(
+        val image = dataSource.getRandomGameImageAsset()
+        val newGame = Game(
             Random.nextLong(),
-            flowerName,
+            gameName,
             image,
-            flowerDescription
+            gameDescription
         )
 
-        dataSource.addFlower(newFlower)
+        dataSource.addGame(newGame)
     }
 }
 
-class FlowersListViewModelFactory(private val context: Context) : ViewModelProvider.Factory {
+class GameListViewModelFactory(private val context: Context) : ViewModelProvider.Factory {
 
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
-        if (modelClass.isAssignableFrom(FlowersListViewModel::class.java)) {
+        if (modelClass.isAssignableFrom(GameListViewModel::class.java)) {
             @Suppress("UNCHECKED_CAST")
-            return FlowersListViewModel(
+            return GameListViewModel(
                 dataSource = DataSource.getDataSource(context.resources)
             ) as T
         }

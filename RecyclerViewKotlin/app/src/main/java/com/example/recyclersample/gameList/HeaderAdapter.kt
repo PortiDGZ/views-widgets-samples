@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.recyclersample.flowerList
+package com.example.recyclersample.gameList
 
 import android.view.LayoutInflater
 import android.view.View
@@ -23,30 +23,26 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.recyclersample.R
 
-/* A list always displaying one element: the number of flowers. */
 
 class HeaderAdapter: RecyclerView.Adapter<HeaderAdapter.HeaderViewHolder>() {
-    private var flowerCount: Int = 0
+    private var gameCount: Int = 0
 
-    /* ViewHolder for displaying header. */
     class HeaderViewHolder(view: View) : RecyclerView.ViewHolder(view){
-        private val flowerNumberTextView: TextView = itemView.findViewById(R.id.flower_number_text)
+        private val gameNumberTextView: TextView = itemView.findViewById(R.id.game_number_text)
 
-        fun bind(flowerCount: Int) {
-            flowerNumberTextView.text = flowerCount.toString()
+        fun bind(gameCount: Int) {
+            gameNumberTextView.text = gameCount.toString()
         }
     }
 
-    /* Inflates view and returns HeaderViewHolder. */
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HeaderViewHolder {
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.header_item, parent, false)
         return HeaderViewHolder(view)
     }
 
-    /* Binds number of flowers to the header. */
     override fun onBindViewHolder(holder: HeaderViewHolder, position: Int) {
-        holder.bind(flowerCount)
+        holder.bind(gameCount)
     }
 
     /* Returns number of items, since there is only one item in the header return one  */
@@ -55,8 +51,8 @@ class HeaderAdapter: RecyclerView.Adapter<HeaderAdapter.HeaderViewHolder>() {
     }
 
     /* Updates header to display number of flowers when a flower is added or subtracted. */
-    fun updateFlowerCount(updatedFlowerCount: Int) {
-        flowerCount = updatedFlowerCount
+    fun updateGameCount(updatedGameCount: Int) {
+        gameCount = updatedGameCount
         notifyDataSetChanged()
     }
 }

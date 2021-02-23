@@ -22,15 +22,23 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
+<<<<<<< Updated upstream
 class GameAdapter(private val flowerList: Array<String>) :
+=======
+class GameAdapter(private val gameList: Array<String>) :
+>>>>>>> Stashed changes
     RecyclerView.Adapter<GameAdapter.GameViewHolder>() {
 
     // Describes an item view and its place within the RecyclerView
     class GameViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+<<<<<<< Updated upstream
         private val flowerTextView: TextView = itemView.findViewById(R.id.game_text)
+=======
+        private val gameTextView: TextView = itemView.findViewById(R.id.game_text)
+>>>>>>> Stashed changes
 
         fun bind(word: String) {
-            flowerTextView.text = word
+            gameTextView.text = word
         }
     }
 
@@ -44,11 +52,15 @@ class GameAdapter(private val flowerList: Array<String>) :
 
     // Returns size of data list
     override fun getItemCount(): Int {
-        return flowerList.size
+        return gameList.size
     }
 
     // Displays data at a certain position
     override fun onBindViewHolder(holder: GameViewHolder, position: Int) {
+<<<<<<< Updated upstream
         holder.bind(flowerList[position])
+=======
+        holder.bind(gameList[position])
+>>>>>>> Stashed changes
     }
 }

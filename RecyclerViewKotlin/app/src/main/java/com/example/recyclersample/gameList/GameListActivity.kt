@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.recyclersample.flowerList
+package com.example.recyclersample.gameList
 
 import android.app.Activity
 import android.content.Intent
@@ -24,19 +24,19 @@ import android.view.View
 import androidx.activity.viewModels
 import androidx.recyclerview.widget.ConcatAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.example.recyclersample.addFlower.AddFlowerActivity
-import com.example.recyclersample.flowerDetail.FlowerDetailActivity
+import com.example.recyclersample.gameDetail.GameDetailActivity
 import com.example.recyclersample.R
-import com.example.recyclersample.addFlower.FLOWER_DESCRIPTION
-import com.example.recyclersample.addFlower.FLOWER_NAME
-import com.example.recyclersample.data.Flower
+import com.example.recyclersample.addGame.AddGameActivity
+import com.example.recyclersample.addGame.GAME_DESCRIPTION
+import com.example.recyclersample.addGame.GAME_NAME
+import com.example.recyclersample.data.Game
 
-const val FLOWER_ID = "flower id"
+const val GAME_ID = "game id"
 
-class FlowersListActivity : AppCompatActivity() {
-    private val newFlowerActivityRequestCode = 1
-    private val flowersListViewModel by viewModels<FlowersListViewModel> {
-        FlowersListViewModelFactory(this)
+class GameListActivity : AppCompatActivity() {
+    private val newGameActivityRequestCode = 1
+    private val gameListViewModel by viewModels<GameListViewModel> {
+        GameListViewModelFactory(this)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -46,16 +46,16 @@ class FlowersListActivity : AppCompatActivity() {
         /* Instantiates headerAdapter and flowersAdapter. Both adapters are added to concatAdapter.
         which displays the contents sequentially */
         val headerAdapter = HeaderAdapter()
-        val flowersAdapter = FlowersAdapter { flower -> adapterOnClick(flower) }
-        val concatAdapter = ConcatAdapter(headerAdapter, flowersAdapter)
+        val gameAdapter = GameAdapter { game -> adapterOnClick(game) }
+        val concatAdapter = ConcatAdapter(headerAdapter, gameAdapter)
 
         val recyclerView: RecyclerView = findViewById(R.id.recycler_view)
         recyclerView.adapter = concatAdapter
 
-        flowersListViewModel.flowersLiveData.observe(this, {
+        gameListViewModel.gameLiveData.observe(this, {
             it?.let {
-                flowersAdapter.submitList(it as MutableList<Flower>)
-                headerAdapter.updateFlowerCount(it.size)
+                gameAdapter.submitList(it as MutableList<Game> as List<Game>?)
+                headerAdapter.updateGameCount(it.size)
             }
         })
 
@@ -66,28 +66,28 @@ class FlowersListActivity : AppCompatActivity() {
     }
 
     /* Opens FlowerDetailActivity when RecyclerView item is clicked. */
-    private fun adapterOnClick(flower: Flower) {
-        val intent = Intent(this, FlowerDetailActivity()::class.java)
-        intent.putExtra(FLOWER_ID, flower.id)
+    private fun adapterOnClick(game: Game) {
+        val intent = Intent(this, GameDetailActivity()::class.java)
+        intent.putExtra(GAME_ID, game.id)
         startActivity(intent)
     }
 
     /* Adds flower to flowerList when FAB is clicked. */
     private fun fabOnClick() {
-        val intent = Intent(this, AddFlowerActivity::class.java)
-        startActivityForResult(intent, newFlowerActivityRequestCode)
+        val intent = Intent(this, AddGameActivity::class.java)
+        startActivityForResult(intent, newGameActivityRequestCode)
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, intentData: Intent?) {
         super.onActivityResult(requestCode, resultCode, intentData)
 
         /* Inserts flower into viewModel. */
-        if (requestCode == newFlowerActivityRequestCode && resultCode == Activity.RESULT_OK) {
+        if (requestCode == newGameActivityRequestCode && resultCode == Activity.RESULT_OK) {
             intentData?.let { data ->
-                val flowerName = data.getStringExtra(FLOWER_NAME)
-                val flowerDescription = data.getStringExtra(FLOWER_DESCRIPTION)
+                val gameName = data.getStringExtra(GAME_NAME)
+                val gameDescription = data.getStringExtra(GAME_DESCRIPTION)
 
-                flowersListViewModel.insertFlower(flowerName, flowerDescription)
+                gameListViewModel.insertGame(gameName, gameDescription)
             }
         }
     }

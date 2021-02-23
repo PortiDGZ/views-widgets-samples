@@ -23,6 +23,10 @@
         android:id="@+id/game_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< Updated upstream:RecyclerViewSimple/app/src/main/res/layout/game_item.xml
         android:text="@string/textview"
+=======
+        android:text="TextView"
+>>>>>>> Stashed changes:RecyclerViewSimple/app/src/main/res/layout/flower_item.xml
         android:textSize="50sp" />
 </FrameLayout>

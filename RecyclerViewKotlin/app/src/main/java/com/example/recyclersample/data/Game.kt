@@ -18,7 +18,7 @@ package com.example.recyclersample.data
 
 import androidx.annotation.DrawableRes
 
-data class Flower(
+data class Game(
     val id: Long,
     val name: String,
     @DrawableRes

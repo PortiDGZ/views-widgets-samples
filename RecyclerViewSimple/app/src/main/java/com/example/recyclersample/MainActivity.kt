@@ -26,9 +26,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         // Retrieves data from datasource
-        val flowerList = Datasource(this).getFlowerList()
+        val gameList = Datasource(this).getFlowerList()
 
         val recyclerView: RecyclerView = findViewById(R.id.recycler_view)
+<<<<<<< Updated upstream
         recyclerView.adapter = GameAdapter(flowerList)
+=======
+        recyclerView.adapter = GameAdapter(gameList)
+>>>>>>> Stashed changes
     }
 }
