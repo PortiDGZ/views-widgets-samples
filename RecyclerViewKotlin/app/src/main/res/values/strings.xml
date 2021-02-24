@@ -1,61 +1,60 @@
-<!--
-     Copyright (C) 2020 The Android Open Source Project
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-          http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
--->
 
 <resources>
-    <string name="app_name">RecyclerView Sample</string>
-    <string name="add_flower">Add Flower</string>
+    <string name="app_name">RecyclerView</string>
+    <string name="add_game">Añadir Juego</string>
 
-    <string name="flower1_name">Rose</string>
-    <string name="flower2_name">Freesia</string>
-    <string name="flower3_name">Lily</string>
-    <string name="flower4_name">Sunflower</string>
-    <string name="flower5_name">Peony</string>
-    <string name="flower6_name">Daisy</string>
-    <string name="flower7_name">Lilac</string>
-    <string name="flower8_name">Marigold</string>
-    <string name="flower9_name">Poppy</string>
-    <string name="flower10_name">Daffodil</string>
-    <string name="flower11_name">Dahlia</string>
-    <string name="flower12_name">Tulip</string>
+    <string name="game1_name">Battlefield 3</string>
+    <string name="game2_name">Black Desert Online</string>
+    <string name="game3_name">World of Warcraft</string>
+    <string name="game4_name">Battlefield 4</string>
+    <string name="game5_name">CoD: Modern Warfare 2</string>
+    <string name="game6_name">Momodora: Reverie Under the Moonlight</string>
+    <string name="game7_name">Hollow Knight</string>
+    <string name="game8_name">Dark Souls</string>
+    <string name="game9_name">Satisfactory</string>
+    <string name="game10_name">Minecraft</string>
+    <string name="game11_name">Borderlands 3</string>
+    <string name="game12_name">Blasphemous</string>
 
-    <string name="flower1_description">Rose comes from the Latin word Rosa. There are over 100
-        species of the rose. </string>
-    <string name="flower2_description">Freesias bloom during spring and are native to
-        Africa.</string>
-    <string name="flower3_description">Lilies have the longest in vase lifespan of any cut
-        bloom.</string>
-    <string name="flower4_description">Mature Sunflowers face east and are native too the United
-        States.</string>
-    <string name="flower5_description">Peony plants can live to be 100 years old.</string>
-    <string name="flower6_description">Daisies are cousins with Sunflowers.</string>
-    <string name="flower7_description">Lilacs belong to the olive family.</string>
-    <string name="flower8_description">Marigolds come in orange, reed, maroon and yellow.</string>
-    <string name="flower9_description">Poppies can be over 3 feet tall.</string>
-    <string name="flower10_description">Daffodils are referred to as Lent Lilies in England</string>
-    <string name="flower11_description">Dahlia is named after the Swedish botanist Anders
-        Dahl</string>
-    <string name="flower12_description">There are over 150 species of tulips.</string>
+    <string name="game1_description">Battlefield 3 es un videojuego de disparos en primera persona desarrollado
+        por la compañía EA Digital Illusions CE (DICE) y distribuido por Electronic Arts.
+        Es el sucesor directo de Battlefield 2 y el undécimo de la saga Battlefield. </string>
+    <string name="game2_description"> Un Multijugador Masivo en Linea (MMO), si aprecias tu vida no entres a jugar, una vez entras
+        ya no sales. Si te gusta apostar todo a la suerte o al RNG (Random Number Generation) conocido en este tipo de juegos
+    entonces es tu juego, no digas que no te lo adverti.</string>
+    <string name="game3_description">Antaño el MMO por excelencia, ahora meramente una sombra de lo que fue, aún así sigue teniendo una gran
+    base de jugadores.</string>
+    <string name="game4_description">Sucesor de Battlefield 3, no consiguió superar a este debido a presiones por lanzarlo
+    de manera temprana lo que causó que el NetCode del juego funcionase de manera nefasta ocasionando desincronización entre cliente-servidor</string>
+    <string name="game5_description">Sucesor de CoD 4: Modern Warfare, tuvo su polémica por una misión llamada "Nada de ruso" que fue censurada en Rusia
+    por representar un tiroteo masivo en un aeropuerto de Moscú.</string>
+    <string name="game6_description">Juego de género metroidvania, el jugador controla a Kaho, una sacerdotisa que ha emprendido
+    una misión para salvar a su tierra de una maldición.</string>
+    <string name="game7_description">Otro género metroidvania.
+        El videojuego cuenta la historia del Caballero,
+        en su búsqueda para descubrir los secretos del largamente abandonado reino de Hallownest,
+        cuyas profundidades atraen a los aventureros y valientes con la promesa de tesoros o la respuesta a misterios antiguos.</string>
+    <string name="game8_description">Sucesor de Demon Souls y solo los que tampoco aprecian su vida juegan a esta saga y género de videojuegos.</string>
+    <string name="game9_description">Juego para personas que les encanta la automatización de procesos, en resumen, consigues recursos,
+    creas máquinas que los consiguen por ti, creas máquinas que los procesan por ti y tras
+        jugarlo por mas de 5000 horas acabas creando una planta de automatización que te
+    hace cuestionarte en que momento pagaste los 30€ que vale.</string>
+    <string name="game10_description">No se sabe como este juego llegó a la fama, porque a alguien que no estaba bien de la cabeza un día
+    se le ocurrió programar este juego en Java sin motor gráfico con las librerías OpenGL, su rendimiento es pésimo pero es el juego más
+    descargado de toda la historia de los videojuegos. Admito que yo también le he echado cientos y miles de horas.</string>
+    <string name="game11_description">Sucesor de Borderlands 2, se desconocen las sustancias que los desarrolladores
+        tomaron cuando empezaron a crearlo, solo ves explosiones, acción, disparos y más explosiones. (¿He dicho que hay muchas explosiones?) </string>
+    <string name="game12_description">Metroidvania desarrollado por un estudio sevillano, fue número 1 en ventas mundial en su día de lanzamiento
+    en Steam. Toma elementos de la Semana Santa para ambientar el juego. Los desarrolladores de este juego tienen un problema con las
+    cosas punzantes.</string>
 
-    <string name="flower_string">Flowers</string>
-    <string name="flower_finder">Flower finder</string>
-    <string name="flower_description_edit_text">Flower Description</string>
-    <string name="flower_name_edit_text">Flower Name</string>
-    <string name="done_button_text">Done</string>
+    <string name="game_string">Juegos</string>
+    <string name="game_finder">Buscador de juegos</string>
+    <string name="game_description_edit_text">Descripción del juego</string>
+    <string name="game_name_edit_text">Nombre del juego</string>
+    <string name="done_button_text">Hecho</string>
     <string name="fab_content_description">fab</string>
-    <string name="flower_image_content_description">Image of flower</string>
-    <string name="remove_this_flower">Remove this flower</string>
+    <string name="game_image_content_description">Imagen del juego</string>
+    <string name="remove_this_game">Eliminar este juego</string>
 
 </resources>

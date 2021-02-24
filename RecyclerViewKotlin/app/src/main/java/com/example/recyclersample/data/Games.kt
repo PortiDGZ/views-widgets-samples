@@ -24,69 +24,75 @@ fun gameList(resources: Resources): List<Game> {
     return listOf(
         Game(
             id = 1,
-            name = resources.getString(R.string.flower1_name),
+            name = resources.getString(R.string.game1_name),
             image = R.drawable.rose,
-            description = resources.getString(R.string.flower1_description)
+            description = resources.getString(R.string.game1_description)
         ),
         Game(
             id = 2,
-            name = resources.getString(R.string.flower2_name),
+            name = resources.getString(R.string.game2_name),
             image = R.drawable.freesia,
-            description = resources.getString(R.string.flower2_description)
+            description = resources.getString(R.string.game2_description)
         ),
         Game(
             id = 3,
-            name = resources.getString(R.string.flower3_name),
+            name = resources.getString(R.string.game3_name),
             image = R.drawable.lily,
-            description = resources.getString(R.string.flower3_description)
+            description = resources.getString(R.string.game3_description)
         ),
         Game(
             id = 4,
-            name = resources.getString(R.string.flower4_name),
+            name = resources.getString(R.string.game4_name),
             image = R.drawable.sunflower,
-            description = resources.getString(R.string.flower4_description)
+            description = resources.getString(R.string.game4_description)
         ),
         Game(
             id = 5,
-            name = resources.getString(R.string.flower5_name),
+            name = resources.getString(R.string.game5_name),
             image = R.drawable.peony,
-            description = resources.getString(R.string.flower5_description)
+            description = resources.getString(R.string.game5_description)
         ),
         Game(
             id = 6,
-            name = resources.getString(R.string.flower6_name),
+            name = resources.getString(R.string.game6_name),
             image = R.drawable.daisy,
-            description = resources.getString(R.string.flower6_description)
+            description = resources.getString(R.string.game6_description)
         ),
         Game(
             id = 7,
-            name = resources.getString(R.string.flower7_name),
+            name = resources.getString(R.string.game7_name),
             image = R.drawable.lilac,
-            description = resources.getString(R.string.flower7_description)
+            description = resources.getString(R.string.game7_description)
         ),
         Game(
             id = 8,
-            name = resources.getString(R.string.flower8_name),
+            name = resources.getString(R.string.game8_name),
             image = R.drawable.marigold,
-            description = resources.getString(R.string.flower8_description)
+            description = resources.getString(R.string.game8_description)
         ),
         Game(
             id = 9,
-            name = resources.getString(R.string.flower9_name),
+            name = resources.getString(R.string.game9_name),
             image = R.drawable.poppy,
-            description = resources.getString(R.string.flower9_description)
+            description = resources.getString(R.string.game9_description)
         ),
         Game(
             id = 10,
-            name = resources.getString(R.string.flower10_name),
+            name = resources.getString(R.string.game10_name),
             image = R.drawable.daffodil,
-            description = resources.getString(R.string.flower10_description)
+            description = resources.getString(R.string.game10_description)
         ),
         Game(
             id = 11,
-            name = resources.getString(R.string.flower11_name),
+            name = resources.getString(R.string.game11_name),
             image = R.drawable.dahlia,
-            description = resources.getString(R.string.flower11_description)
-        )
+            description = resources.getString(R.string.game11_description)
+        ),
+        Game(
+             id = 11,
+             name = resources.getString(R.string.game12_name),
+             image = R.drawable.dahlia,
+             description = resources.getString(R.string.game12_description)
+            )
     )
 }

@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:paddingTop="24dp"
         android:paddingBottom="24dp"
-        android:text="@string/flower1_name"
+        android:text="@string/game1_name"
         android:textAlignment="center"
         android:textAppearance="?attr/textAppearanceHeadline3" />
 
@@ -33,7 +33,7 @@
         android:layout_width="320dp"
         android:layout_height="320dp"
         android:layout_gravity="center"
-        android:contentDescription="@string/flower_image_content_description"
+        android:contentDescription="@string/game_image_content_description"
         app:srcCompat="@drawable/rose" />
 
     <TextView
@@ -41,7 +41,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="16dp"
-        android:text="@string/flower1_description" />
+        android:text="@string/game1_description" />
 
     <Button
         android:id="@+id/remove_button"
@@ -49,5 +49,5 @@
         android:layout_width="240dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="@string/remove_this_flower" />
+        android:text="@string/remove_this_game" />
 </LinearLayout>
