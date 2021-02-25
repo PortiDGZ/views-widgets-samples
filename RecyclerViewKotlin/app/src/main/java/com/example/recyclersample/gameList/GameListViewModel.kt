@@ -27,18 +27,18 @@ class GameListViewModel(val dataSource: DataSource) : ViewModel() {
 
     val gameLiveData = dataSource.getGameList()
 
-    /* If the name and description are present, create new Flower and add it to the datasource */
-    fun insertGame(gameName: String?, gameDescription: String?) {
-        if (gameName == null || gameDescription == null) {
+    fun insertGame(gameName: String?, gameDescription: String?, gameShortDescription: String?) {
+        if (gameName == null || gameDescription == null || gameShortDescription == null) {
             return
         }
 
-        val image = dataSource.getRandomGameImageAsset()
+        val image = dataSource.getImageAsset()
         val newGame = Game(
             Random.nextLong(),
             gameName,
             image,
-            gameDescription
+            gameDescription,
+            gameShortDescription
         )
 
         dataSource.addGame(newGame)

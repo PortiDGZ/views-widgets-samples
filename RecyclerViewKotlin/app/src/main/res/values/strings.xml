@@ -56,5 +56,24 @@
     <string name="fab_content_description">fab</string>
     <string name="game_image_content_description">Imagen del juego</string>
     <string name="remove_this_game">Eliminar este juego</string>
+    <string name="share"> Compartir este juego</string>
+    <string name="send"> Enviar correo</string>
+    <string name="find">Buscar en internet</string>
+
+    <string name="game1_short_description">Battlefield 3 es un juego desarrollado por DICE.</string>
+    <string name="game2_short_description"> Juego de ludópatas.</string>
+    <string name="game3_short_description">Juego para los que no se atreven a jugar Black Desert.</string>
+    <string name="game4_short_description">Como estropear una saga con las prisas.</string>
+    <string name="game5_short_description">Polémica por tiroteo masivo en un aeropuerto.</string>
+    <string name="game6_short_description">Me lo encontré de casualidad y me encantó.</string>
+    <string name="game7_short_description">Absolute Radiance algún día te ganaré.</string>
+    <string name="game8_short_description">Lo tengo pendiente de jugar, aprendes a base de morir.</string>
+    <string name="game9_short_description"> Juego de enfermo de las máquinas.</string>
+    <string name="game10_short_description">RAM Eater por excelencia.</string>
+    <string name="game11_short_description">Simplemente explosiones. </string>
+    <string name="game12_short_description">La Semana Santa hecha videojuego.</string>
+    <string name="game_short_description_edit_text">Descripción corta</string>
+    <string name="upload_button_text">Subir foto</string>
+    <string name="game_image_desc">Imagen del juego</string>
 
 </resources>

@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.recyclersample.R
 import com.example.recyclersample.data.Game
 
+
 class GameAdapter(private val onClick: (Game) -> Unit) :
     ListAdapter<Game, GameAdapter.GameViewHolder>(GameDiffCallback) {
 
@@ -18,7 +19,9 @@ class GameAdapter(private val onClick: (Game) -> Unit) :
         RecyclerView.ViewHolder(itemView) {
         private val gameTextView: TextView = itemView.findViewById(R.id.game_text)
         private val gameImageView: ImageView = itemView.findViewById(R.id.game_image)
+        private val gameShortDescriptionView: TextView = itemView.findViewById(R.id.game_short_description)
         private var currentGame: Game? = null
+
 
         init {
             itemView.setOnClickListener {
@@ -32,10 +35,14 @@ class GameAdapter(private val onClick: (Game) -> Unit) :
             currentGame = game
 
             gameTextView.text = game.name
+            gameShortDescriptionView.text = game.short_description
+
+
+
             if (game.image != null) {
                 gameImageView.setImageResource(game.image)
             } else {
-                gameImageView.setImageResource(R.drawable.rose)
+                gameImageView.setImageResource(R.drawable.checkerboard)
             }
         }
     }

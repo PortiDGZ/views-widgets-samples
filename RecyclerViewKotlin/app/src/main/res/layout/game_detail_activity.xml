@@ -26,12 +26,13 @@
         android:paddingBottom="24dp"
         android:text="@string/game1_name"
         android:textAlignment="center"
-        android:textAppearance="?attr/textAppearanceHeadline3" />
+        android:textAppearance="?attr/textAppearanceHeadline3"
+        android:textSize="20sp"/>
 
     <ImageView
         android:id="@+id/game_detail_image"
-        android:layout_width="320dp"
-        android:layout_height="320dp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
         android:layout_gravity="center"
         android:contentDescription="@string/game_image_content_description"
         app:srcCompat="@drawable/rose" />
@@ -50,4 +51,26 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="@string/remove_this_game" />
+
+    <Button
+        android:id="@+id/shareBtn"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/share"
+        style="?attr/materialButtonOutlinedStyle" />
+    <Button
+        android:id="@+id/findBtn"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/find"
+        style="?attr/materialButtonOutlinedStyle" />
+    <Button
+        android:id="@+id/sendBtn"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/send"
+        style="?attr/materialButtonOutlinedStyle" />
 </LinearLayout>
