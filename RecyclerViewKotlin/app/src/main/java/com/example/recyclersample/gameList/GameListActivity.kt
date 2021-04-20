@@ -63,7 +63,6 @@ class GameListActivity : AppCompatActivity() {
                 val gameName = data.getStringExtra(GAME_NAME)
                 val gameDescription = data.getStringExtra(GAME_DESCRIPTION)
                 val gameShortDescription = data.getStringExtra(GAME_SHORT_DESCRIPTION)
-                val gameImage = data.getStringExtra(GAME_IMAGE)
                 gameListViewModel.insertGame(gameName, gameDescription, gameShortDescription)
             }
         }

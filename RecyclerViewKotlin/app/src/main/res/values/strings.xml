@@ -1,4 +1,3 @@
-
 <resources>
     <string name="app_name">RecyclerView</string>
     <string name="add_game">Añadir Juego</string>
@@ -8,13 +7,12 @@
     <string name="game3_name">World of Warcraft</string>
     <string name="game4_name">Battlefield 4</string>
     <string name="game5_name">CoD: Modern Warfare 2</string>
-    <string name="game6_name">Momodora: Reverie Under the Moonlight</string>
+    <string name="game6_name">Momodora</string>
     <string name="game7_name">Hollow Knight</string>
     <string name="game8_name">Dark Souls</string>
     <string name="game9_name">Satisfactory</string>
     <string name="game10_name">Minecraft</string>
     <string name="game11_name">Borderlands 3</string>
-    <string name="game12_name">Blasphemous</string>
 
     <string name="game1_description">Battlefield 3 es un videojuego de disparos en primera persona desarrollado
         por la compañía EA Digital Illusions CE (DICE) y distribuido por Electronic Arts.
@@ -44,9 +42,6 @@
     descargado de toda la historia de los videojuegos. Admito que yo también le he echado cientos y miles de horas.</string>
     <string name="game11_description">Sucesor de Borderlands 2, se desconocen las sustancias que los desarrolladores
         tomaron cuando empezaron a crearlo, solo ves explosiones, acción, disparos y más explosiones. (¿He dicho que hay muchas explosiones?) </string>
-    <string name="game12_description">Metroidvania desarrollado por un estudio sevillano, fue número 1 en ventas mundial en su día de lanzamiento
-    en Steam. Toma elementos de la Semana Santa para ambientar el juego. Los desarrolladores de este juego tienen un problema con las
-    cosas punzantes.</string>
 
     <string name="game_string">Juegos</string>
     <string name="game_finder">Buscador de juegos</string>
@@ -61,19 +56,19 @@
     <string name="find">Buscar en internet</string>
 
     <string name="game1_short_description">Battlefield 3 es un juego desarrollado por DICE.</string>
-    <string name="game2_short_description"> Juego de ludópatas.</string>
+    <string name="game2_short_description"> Juego de ludópatas en el que pierdes cientos de horas.</string>
     <string name="game3_short_description">Juego para los que no se atreven a jugar Black Desert.</string>
     <string name="game4_short_description">Como estropear una saga con las prisas.</string>
     <string name="game5_short_description">Polémica por tiroteo masivo en un aeropuerto.</string>
     <string name="game6_short_description">Me lo encontré de casualidad y me encantó.</string>
     <string name="game7_short_description">Absolute Radiance algún día te ganaré.</string>
     <string name="game8_short_description">Lo tengo pendiente de jugar, aprendes a base de morir.</string>
-    <string name="game9_short_description"> Juego de enfermo de las máquinas.</string>
-    <string name="game10_short_description">RAM Eater por excelencia.</string>
-    <string name="game11_short_description">Simplemente explosiones. </string>
-    <string name="game12_short_description">La Semana Santa hecha videojuego.</string>
+    <string name="game9_short_description"> Juego de enfermo de las máquinas que le gusta automatizar todo.</string>
+    <string name="game10_short_description">Dicen que Chrome consume mucha RAM, eso es porque no han jugado este juego.</string>
+    <string name="game11_short_description">Simplemente explosiones y muchos colores. </string>
     <string name="game_short_description_edit_text">Descripción corta</string>
     <string name="upload_button_text">Subir foto</string>
     <string name="game_image_desc">Imagen del juego</string>
+    <string name="label_submit">Enviar</string>
 
 </resources>

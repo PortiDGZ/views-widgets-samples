@@ -29,12 +29,10 @@ class HeaderAdapter: RecyclerView.Adapter<HeaderAdapter.HeaderViewHolder>() {
         holder.bind(gameCount)
     }
 
-    /* Returns number of items, since there is only one item in the header return one  */
     override fun getItemCount(): Int {
         return 1
     }
 
-    /* Updates header to display number of flowers when a flower is added or subtracted. */
     fun updateGameCount(updatedGameCount: Int) {
         gameCount = updatedGameCount
         notifyDataSetChanged()
